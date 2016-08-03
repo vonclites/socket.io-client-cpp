@@ -72,13 +72,13 @@ list(APPEND TARGET_LIBRARIES sioclient_tls)
 endif()
 
 install(FILES ${ALL_HEADERS} 
-    DESTINATION "${CMAKE_INSTALL_PREFIX}/include"
+    DESTINATION "include/${PROJECT_NAME}/"
 )
 
 install(TARGETS ${TARGET_LIBRARIES}
-    DESTINATION "${CMAKE_INSTALL_PREFIX}/lib"
+    DESTINATION "lib"
 )
 
 install(FILES ${Boost_LIBRARIES} 
-    DESTINATION "${CMAKE_INSTALL_PREFIX}/lib"
+    DESTINATION "lib"
 )
